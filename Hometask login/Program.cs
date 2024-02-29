@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata;
+using System.Threading.Channels;
 
 namespace Hometask_login
 {
@@ -14,9 +15,23 @@ namespace Hometask_login
 
             //account.Login(enteredUsername, enteredPassword);
             //Console.ReadLine();
+            Console.WriteLine("Back end register form");
+            Apply apply = new Apply();
+            Console.WriteLine("Please enter name");
+            string Name = Console.ReadLine();
+            Console.WriteLine("Please Enter surname");
+            string Surname = Console.ReadLine();
+            Console.WriteLine("Please enter Phone number or email adress");
+            string Email = Console.ReadLine();
+            Console.WriteLine("Please create new password");
+            string Password = Console.ReadLine();
+            Console.WriteLine("Please enter Britdhay date dd/MM/yyyy ");
+            string Brithday = Console.ReadLine();
+            Console.WriteLine("Please Chose Gender");
+            string Gender = Console.ReadLine();
+            Console.WriteLine("Registration Completed");
 
-            Apply apply = new Apply("Memmedeli","Memmedov","+994554180716","16.memmedeli@mail.ru","salam123",new DateTime(2002,7,16),"Male");
-           Console.WriteLine(apply.Gender);
+
 
         }
     }  
